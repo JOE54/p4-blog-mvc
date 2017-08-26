@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Parisienne');
+
+/* GENERAL */
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    color: #777;
+}
+h1, h2
+{
+    color: #655764;
+}
+h2, h3
+{
+    font-weight: bold;
+}
+span
+{
+    font-family: 'Parisienne', cursive;
+}
+.divider
+{
+    width: 100px;
+    height: 3px;
+    background-color: #999;
+    margin: 60px auto 0 auto;
+}
+time
+{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+a:link, a:hover, a:visited
+{
+    text-decoration: none;
+}
+section h1 span,
+article h1 span
+{
+    background-color: #655764;
+    color: #ddd;
+    padding: 5px 10px;
+}
+/* bbcode */
+article p span,
+table td span
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+header nav
+{
+    padding: 35px 0;
+}
+.navbar-brand
+{
+    font-family: 'Parisienne', cursive;
+    font-size: 3em;
+    font-style: italic;
+    color: #655764 !important;
+}
+header nav ul li a
+{
+    font-weight: bold;
+}
+header .container-fluid
+{
+    background: url(images/wallpaper.jpg) center no-repeat;
+    margin-top: 120px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header .container-fluid h1
+{
+    font-size: 2.3em;
+    background-color: rgba(101, 87, 100, 0.4);
+    padding: 15px 10px;
+    color: #fff;
+}
+header .container-fluid h1 span
+{
+    color: #444;
+    text-shadow: 3px 3px 24px #fff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+header .container-fluid strong
+{
+    font-size: 1em;
+    font-weight: 100;
+}
+
+/* ARTICLES (ACCUEIL) */
+
+#episodes h2
+{
+    margin-top: 60px;
+    font-size: 2.6em;
+    color: #666;
+    text-align: center;
+}
+#row
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#episodes article
+{
+    width: 350px;
+    height: 350px;
+    margin: 35px 0;
+    padding: 10px 20px;
+    border: 5px solid #cec4c3;
+    box-shadow: 6px 6px 6px #cec4c3;
+    position: relative;
+}
+#episodes article p
+{
+    font-size: 1.2em;
+}
+#episodes article .link
+{
+    font-size: 1.6em;
+    font-family: 'Parisienne', cursive;
+    color: #fff;
+    background-color: #8d8183;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#episodes article .link:hover
+{
+    background-color: #cec4c3;   
+}
+
+/* ARTICLE (EPISODE) */
+
+#article p,
+#article time,
+.comments,
+#form
+{
+    font-size: 1.1em;
+}
+#article .link,
+#form input[type="submit"]:hover
+{
+    background-color: #8d8183;    
+}
+
+#article
+{
+    margin-top: 135px;
+}
+#article .link,
+#article .add-comment
+{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+#article .link:hover
+{
+    background-color: #cec4c3;
+}
+#article .add-comment,
+#form input[type="submit"]
+{
+    color: #fff;
+    background-color: #655764;
+}
+.comments h2
+{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.comments input[type="submit"]
+{
+    margin-top: 5px;
+}
+#form input[type="submit"]
+{
+    font-size: 1em;
+    border: none;
+}
+#form input[type="submit"]:hover
+{
+    color: #fff;
+}
+#author
+{
+    width: 50%;
+}
+
+/* FOOTER */
+
+footer
+{
+    min-height: 150px;
+    background-color: #655764;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p, footer a
+{
+    color: #f1f1f1;
+}
+footer a
+{
+    text-decoration: underline !important;
+}
+footer a:hover
+{
+    color: #cec4c3;
+}
+
+/* LOGIN */
+
+#connexion
+{
+    margin-top: 160px;
+}
+#connexion h1
+{
+    text-align: center;
+}
+#connexion button
+{
+    color: #fff;
+    background-color: #8d8183;
+    border: none;   
+}
+#connexion button:hover
+{
+    background-color: #cec4c3;   
+}
+
+/* ADMIN (GÉNÉRAL) */
+
+#connexion h1,
+#connexion form,
+#password form
+{
+    width: 400px;   
+    margin: 0 auto;
+}
+#mentions, #admin, #ajouter, 
+#modifier, #lire-article, 
+#commentaires-signales, 
+#password
+{
+    margin-top: 130px;
+}
+table th
+{
+    background-color: #655764;
+    color: #fff;
+    font-weight: 100;
+}
+
+/* ADMIN (ADMIN) */
+
+#admin div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#admin .disconnect
+{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* ADMIN (LIRE ARTICLE, COMMENTAIRES SIGNALÉS) */
+
+#lire-article h2,
+#commentaires-signales h2
+{
+    margin-bottom: 20px;
+}
+#lire-article p,
+#lire-article time
+{
+    font-size: 1.1em;
+}
+
+/* ADMIN (AJOUTER, MODIFIER) */
+
+#ajouter form input,
+#modifier form input
+{
+    width: 500px;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 768px)
+{
+    /* GENERAL */
+    h1
+    {
+        font-size: 2em;
+    }
+    h2
+    {
+        font-size: 1.6em;
+    }
+    h3
+    {
+        font-size: 1.3em;
+    }
+    /* HEADER */
+    .navbar-brand
+    {
+        font-size: 2.5em;
+    }
+    header .container-fluid
+    {
+        height: 200px;
+    }
+    header a strong
+    {
+        font-size: 0.9em;
+    }
+    header .container-fluid h1
+    {
+      
+        font-size: 1.5em;
+    }
+    header .container-fluid h1 span
+    {
+        font-weight: normal;
+    }
+    /* ARTICLES (ACCUEIL) */
+    #episodes h2
+    {
+        font-size: 2em;
+    }
+    #episodes h3
+    {
+        font-size: 1.7em;
+    }
+    #episodes article .link
+    {
+        font-size: 1.5em;
+    }
+    /* ARTICLE (ÉPISODE) */
+    #article
+    {
+        margin-top: 120px;
+    }
+    #article .link
+    {
+        margin-right: 2px;   
+    }
+    /* ADMIN (LOGIN) */
+    #connexion h1,
+    #connexion form,
+    #password form
+    {
+        width: 100%;
+    }
+    /* ADMIN (ADMIN) */
+    table tr
+    {
+        margin-bottom: 20px;
+        display: flex;
+		flex-wrap: wrap;
+    }
+    table th
+    {
+        display: none;
+    }
+    table td:first-child
+    {
+        background-color: #655764;
+        color: #fff;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    table, table td
+    {
+        border: 0 !important;
+    }
+    /* ADMIN (COMMENTAIRES SIGNALÉS) */
+    #commentaires-signales h2
+    {
+        margin-bottom: 0;
+    }
+    /* ADMIN (AJOUTER, MODIFIER) */
+    #ajouter form input,
+    #modifier form input
+    {
+        width: 100%;
+    }
+}
